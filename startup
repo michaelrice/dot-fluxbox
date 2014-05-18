@@ -1,0 +1,27 @@
+#!/bin/bash
+#
+# Change your keymap:
+#xmodmap "/home/errr/.Xmodmap"
+xrdb load "/home/errr/.Xresources"
+xset -b
+fbsetbg -l
+# Applications you want to run with fluxbox.
+# MAKE SURE THAT APPS THAT KEEP RUNNING HAVE AN ''&'' AT THE END.
+
+/usr/local/bin/fluxbox -log "/home/errr/.fluxbox/log" &
+
+fbpid=$!
+
+# run this stuff AFTER fluxbox starts up
+sleep 2
+{
+    # trys to see if Im at work to setup dual monitors
+    /home/errr/bin/dual-xrandr &
+} &
+
+sleep 5
+{
+    /usr/bin/klipper &
+} &
+
+wait ${fbpid}
