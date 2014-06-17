@@ -16,25 +16,21 @@
 #     session.menuFile: ~/.fluxbox/my-menu
 [begin] (Fluxbox)
 [encoding] {UTF-8}
-      [exec] (terminal) {urxvt} </usr/share/icons/gnome/16x16/apps/gnome-terminal.png> 
+      [exec] (terminal) {urxvt} </usr/share/icons/gnome/16x16/apps/gnome-terminal.png>
       [exec] (firefox) {firefox} </usr/share/icons/hicolor/16x16/apps/iceweasel.png>
-      [exec] (Google Chrome) {chromium} </opt/google/chrome/product_logo_16.png>
+      [exec] (Google Chrome) {chromium} </usr/share/pixmaps/chromium.png>
       [exec] (IntelliJ Idea) {~/Downloads/java/intellij/idea-IU-135.690/bin/idea.sh} <~/Downloads/java/intellij/idea-IU-135.690/bin/idea.png>
-      [exec] (Email) {/usr/bin/icedove}
-      [exec] (STS Eclipse) {/home/errr/bin/eclipse}
-      [exec] (VM Player) {/usr/bin/vmplayer}
+      [exec] (PyCharm) {~/Downloads/python/pycharm-3.1.3/bin/pycharm.sh}</home/errr/Downloads/python/pycharm-3.1.3/bin/pycharm.png>
       [exec] (R Desktop) {remmina}
-      [exec] (Cheese!) {cheese}
-      [exec] (Notes) {tomboy}
+      [exec] (Notes) {tomboy}</usr/share/icons/hicolor/16x16/apps/tomboy.png>
 [submenu] (Terminals)
-      [exec] (terminal) {urxvt} </usr/share/icons/gnome/16x16/apps/gnome-terminal.png> 
-      [exec] (gnome-terminal) {gnome-terminal}
+      [exec] (terminal) {urxvt} </usr/share/icons/gnome/16x16/apps/gnome-terminal.png>
+      [exec] (gnome-terminal) {gnome-terminal} </usr/share/icons/gnome/16x16/apps/gnome-terminal.png>
 [end]
 [submenu] (Net)
 [submenu] (Browsers)
       [exec]   (firefox) {firefox}
       [exec]   (Google Chrome) {/usr/bin/google-chrome} </opt/google/chrome/product_logo_16.png>
-      [exec]   (w3m) {gnome-terminal -e w3m fluxbox.org}
 [end]
 [submenu] (IM)
       [exec]   (pidgin) {pidgin}
