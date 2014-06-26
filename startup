@@ -22,6 +22,7 @@ sleep 2
 sleep 5
 {
     /usr/bin/klipper &
+    /usr/bin/tomboy &
 } &
 
 wait ${fbpid}
